@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MC Donald's:Burgers,Fries&More</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="data:image/jpeg;base64,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"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sen&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  
+</head>
+  <body>
+      <!----------Header------------------->
+    <div class="header">
+      <nav class="nav_menu">
+        <img class="logo" src="./images/logo.jpg" />
+
+        <div class="list_1">
+          <ul>
+            <li>
+              Language<i class="fa fa-angle-down" style="font-size:17px"></i></i>
+            </li>
+            <li>Sign Up for Email</li>
+            <li>Careers</li>
+          </ul>
+        </div>
+        <div class="list_2">
+          <ul>
+            <li><i class="fa fa-search"></i>&nbsp Search</li>
+            <li><i class="material-icons" style="font-size:22px;color:red">place</i>Change your Location</li>
+            <li><button style="font-size: 12px;">Order Now</button></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="main_menu">
+        <ul>
+          <li><a>Our Menu</a><i class="fa fa-angle-down" style="font-size:17px"></i></li>
+          <li><a>Download App</a></li>
+          <li><a>My Mc Donald's Rewards</a></li>
+          <li><a>Exclusive Deals</a></li>
+          <li><a>About Our Food</a></li>
+          <li><a>Locate</a></li>
+          <li><a>Gift Cards</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-----------------Features------------>
+    <div class="features">
+      <div class="row">
+        <div class="img-col" style="padding-bottom:80px;">
+          <img src="./images/offset_meal.jpg" alt="" />
+        </div>
+        <div class="text-col" >
+          <h2><b>The Cardi B & Offset Meal (Meal!)</b></h2>
+          <p>
+            They picked the bundle. You pick who you’re taking. Friends, lovers
+            and Fries are coming together for a hot McDonald’s date. Order yours
+            with<a href="#">McDelivery®</a>in our app.* Here’s the delicious deets:
+          </p>
+          <ul>
+            <li>QPC® (juicy!)</li>
+            <li>Cheeseburger, side of BBQ sauce</li>
+            <li>Large Fries to share</li>
+            <li>2 large Drinks—he’s into Hi-C®, she likes Coca-Cola®</li>
+            <li>Apple Pie to keep it sweet</li>
+          </ul>
+          <p><span class="small">
+            *Mobile Order & Pay at participating McDonald’s. App download and
+            registration required. Meal available at participating McDonald’s
+            for a limited time.
+          </span></p>
+           
+          <button style="font-size: 12px;">Order Now</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="img-col" >
+          <img src="./images/order_app.jpg" alt="" />
+        </div>
+        <div class="text-col" >
+          <h2><b>Score Free Food with McDelivery®</b></h2>
+          <p>
+            Earn MyMcDonald’s Rewards points on every McDelivery order only in
+            the McD’s app to redeem for free food. And, yup, you can get ‘em
+            delivered, too. Just order, relax and enjoy—
+            <a href="#">check out how easy
+                ordering delivery is in the app.</a>
+            *
+          </p>
+          <p><span class="small">*At participating McDonald's. Only in the app. App registration
+            required. Must be opted into MyMcDonald's Rewards.</span></p>
+            
+          <button style="font-size: 12px;">Earn Points with McDelivery</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="img-col" style="padding-bottom:53px;" >
+          <img src="./images/free_fries.jpg" alt="" />
+        </div>
+        <div class="text-col">
+          <h2><b>Free Fries Now. Free McDonald’s Later.*</b></h2>
+          <p>
+            Get Free Large Fries with a $1 minimum purchase when you download
+            the McDonald’s app & join MyMcDonald’s Rewards. Then, unlock free
+            McDonald’s faves only in the app with 1500 points after your first
+            purchase as a MyMcDonald’s Rewards member.
+          </p>
+          <p><span class="small">
+            *Offer valid 1x thru the last day of the month for first time app
+            users at participating McDonald's. May take up to 48 hours to appear
+            in your deals. Excludes delivery. Excludes tax. Free MyMcDonald’s
+            Rewards points valid 1x thru 12/31/23 for first time MyMcDonald’s
+            Rewards users. Program available only at participating McDonald’s.
+            McD app download and registration required.
+          </span></p>
+            
+          
+          <button style="font-size: 12px;">Get Yours</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="img-col" >
+          <img src="./images/mc_march23.png" alt="" />
+        </div>
+        <div class="text-col" >
+          <h2><b>Experience History at the ’23 McDonald’s All American Games</b></h2>
+          <p>
+            Since 1977, the McDonald’s All American Games have served as a
+            launching pad, elevating the best of high school basketball into the
+            next generation of greats. This year’s stars will make their way to
+            Houston, as H-Town hosts the 46th annual event on March 28, 2023.
+          </p>
+          <button style="font-size: 12px;">Check Tickets</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="img-col" >
+          <img src="./images/lady.jpg" alt="" />
+        </div>
+        <div class="text-col" >
+          <h2><b>Your Story Deserves a Hollywood Ending</b></h2>
+          <p>
+            Latinos have stories to tell, yet they make up less than 1% of the
+            ones told in Hollywood. As a champion of the Hispanic community
+            McDonald’s wants to help change that. With Spotlight Dorado,
+            McDonald’s is giving aspiring Latino filmmakers a chance to
+            participate in a short film competition. Aspiring filmmakers will
+            bring their vision to life having their story produced into a short
+            film with invaluable mentorship from renowned industry leaders and a
+            chance to showcase their film in film festivals around the country.
+          </p>
+          <button style="font-size: 12px;">Learn More About Spotlight Dorado</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="img-col" >
+          <img src="./images/lady_me_scholers.jpg" alt="" />
+        </div>
+        <div class="text-col" >
+          <h2><b>
+            McDonald’s Black and Positively Golden Scholarship Program Awards
+            $1,000,000 in Scholarships
+        </b></h2>
+          <p>
+            McDonald’s Black and Positively Golden Scholarship Program awards
+            $1,000,000 in scholarships to students attending Historically Black
+            Colleges and Universities (HBCUs) in partnership with the Thurgood
+            Marshall College Fund (TMCF). Apply now through March 27th at
+            TMCF.org.
+          </p>
+          <button style="font-size: 12px;">Apply Now</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="img-col" >
+          <img src="./images/discover_your_meals.jpg" alt="" />
+        </div>
+        <div class="text-col">
+          <h2><b>Deals for Days</b></h2>
+          <p>
+            Get
+            <a href="#">exclusive deals</a> 
+             on your McDonald’s favorites in the app with
+            contactless Mobile Order & Pay* and convenient Drive Thru or
+            Curbside pickup.
+          </p>
+          <p><span class="small">*Mobile Order & Pay at participating McDonald’s</span></p>
+          <button style="font-size:12px;">Get App Deals</button>
+        </div>
+      </div>
+    </div>
+    <!-----------------------Footer------------>
+    <div class="footer">
+        
+        <div class="row">
+          <div class="col">
+            <h4><b>About Us</b></h4>
+            <a href="#">About Us Overview</a>
+            <a href="#">Leadership Team</a>
+            <a href="#">Values In Action</a>
+            <a href="#">Franchise Info</a>
+            <a href="#">Recalls & Alerts</a>
+            <a href="#">Real Estate</a>
+            <a href="#">Values In Action</a>
+            <a href="#">Accessibility</a>
+            <a href="#">Investor Relations</a>
+            <a href="#">News & Notifications</a>
+            
+            
+
+          </div>
+          <div class="col">
+              <h4><b>Services</b></h4>
+            <a href="#">Services Overview</a>
+            <a href="#">Wi-Fi</a>
+            <a href="#">PlayPlaces & Parties</a>
+            <a href="#">McDelivery®</a>
+            <a href="#">Mobile Order & Pay</a>
+            <a href="#">Trending Now</a>
+            <a href="#">McDonald’s Merchandise</a>
+            <a href="#">Family Fun Hub</a>
+            <a href="#">MyMcDonald's Rewards</a>
+            <a href="#">Trending Now</a>
+            <a href="#">McCafé®</a>
+          </div>
+          <div class="col">
+              <h4><b>Community</b></h4>
+            <a href="#">Community</a>
+            <a href="#">HACER® Scholarships for Hispanic Students</a>
+            <a href="#">Ronald McDonald House</a>
+            <a href="#">Charities</a>
+            <a href="#">McDonald’s Asian Pacific</a>
+            <a href="#">American</a>
+            <a href="#">McDonald’s International</a>
+            <a href="#">Black and Positively</a>
+            <a href="#">Golden</a>
+            <a href="#">McDonald’s LGBTQ+</a>
+          </div>
+          <div class="col">
+              <h4><b>Contact Us</b></h4>
+            <a href="#">Contact Us</a>
+            <a href="#">Gift Card FAQs</a>
+            <a href="#">Donations</a>
+            <a href="#">Employment</a>
+            <a href="#">Customer Feedback</a>
+            <a href="#">Frequently Asked</a>
+            <a href="#">Questions</a>
+          </div>
+        </div>
+        <img src="https://www.mcdonalds.com/content/dam/sites/usa/nfl/icons/facebook.png" alt="">
+        <img src="https://www.mcdonalds.com/content/dam/sites/usa/nfl/icons/twitter.png" alt="">
+        <img src="https://www.mcdonalds.com/content/dam/sites/usa/nfl/icons/youtube.png" alt="">
+        <img src="https://www.mcdonalds.com/content/dam/sites/usa/nfl/icons/instagram.png" alt="">
+        <img src="https://www.mcdonalds.com/content/dam/sites/usa/nfl/icons/tumblr.png" alt=""> 
+        <img src="https://www.mcdonalds.com/content/dam/sites/usa/nfl/icons/spotify.png" alt="">
+        <img class="googleimg"src="https://www.mcdonalds.com/content/dam/sites/usa/nfl/logo/app_store_badge.png" alt="">
+        <img src="https://www.mcdonalds.com/content/dam/sites/usa/nfl/logo/google_play_badge.png" alt="">
+        <br>
+        <br>
+        <div class="border"></div>
+        <div class="footer_nav">
+            <ul>
+            <li>California Privacy Notice </li>
+            <li>Terms&Conditions</li>
+            <li>Do ll or Share My Personal Information</li>
+           <li>Cookies Settings</li>
+        </ul>
+        </div>
+        
+    </div>
+  </body>
+</html>
